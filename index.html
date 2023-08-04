@@ -1,133 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Peta Pembelajaran Back-End Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            animation: fadeIn 2s;
-        }
-
-        h2 {
-            margin-top: 30px;
-            animation: fadeIn 1s;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peta Pembelajaran Back-End Developer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #b54dcf;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin-top: 0;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  .animate-fade {
+    animation: fade-in 1.5s ease-in-out forwards;
+    opacity: 0;
+  }
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
 </head>
 <body>
-    <h1>Peta Pembelajaran Back-End Developer</h1>
-
-    <h2>1. Dasar-dasar Pemrograman</h2>
+  <header>
+    <h1>Peta Pembelajaran Back-End</h1>
+  </header>
+  <div class="container">
+    <h2 class="animate-fade">1. Dasar-dasar Pemrograman</h2>
     <ul>
-        <li>Memahami konsep dasar pemrograman seperti variabel, tipe data, struktur kontrol, dan fungsi.</li>
-    </ul>
-
-    <h2>2. Bahasa Pemrograman</h2>
-    <ul>
-        <li>Memilih bahasa pemrograman yang cocok untuk back-end development, seperti Node.js (JavaScript), Python, Ruby, Java, PHP, atau C#.</li>
+      <li class="animate-fade">Memahami konsep dasar pemrograman seperti variabel, tipe data, struktur kontrol, dan fungsi</li>
     </ul>
     
-    <h2>3. Pemrograman Asinkron</h2>
+    <h2 class="animate-fade">2. Bahasa Pemrograman</h2>
     <ul>
-        <li>Pemrograman asinkron adalah konsep penting dalam back-end development karena aplikasi back-end seringkali harus menangani banyak operasi yang membutuhkan waktu, seperti koneksi database atau pemanggilan API. Anda perlu memahami konsep pemrograman asinkron dan cara mengatasi masalah konkurensi.</li>
-    </ul>
- 
-    <h2>4. Penggunaan Basis Data</h2>
-    <ul>
-        <li>Basis data adalah salah satu komponen inti dalam back-end development. Anda perlu memahami cara menghubungkan aplikasi Anda dengan basis data, melakukan operasi CRUD (Create, Read, Update, Delete) pada data, dan mengelola koneksi dengan basis data.</li>
+      <li class="animate-fade">Memilih bahasa pemrograman yang cocok untuk back-end development, seperti Node.js (JavaScript), Python, Ruby, Java, PHP, atau C#.</li>
     </ul>
 
-    <h2>5.  Sistem Manajemen Basis Data (Database Management Systems - DBMS)</h2>
+    <h2 class="animate-fade">3. Pemrograman Asinkron</h2>
     <ul>
-        <li>Anda perlu memahami cara menginstal, mengkonfigurasi, dan mengelola DBMS seperti MySQL, PostgreSQL, MongoDB, atau yang lainnya, tergantung pada pilihan basis data Anda.</li>
+      <li class="animate-fade">Pemrograman asinkron adalah konsep penting dalam back-end development karena aplikasi back-end seringkali harus menangani banyak operasi yang membutuhkan waktu, seperti koneksi database atau pemanggilan API. Anda perlu memahami konsep pemrograman asinkron dan cara mengatasi masalah konkurensi.</li>
+    </ul>
+    
+    <h2 class="animate-fade">4. Penggunaan Basis Data</h2>
+    <ul>
+      <li class="animate-fade">Basis data adalah salah satu komponen inti dalam back-end development. Anda perlu memahami cara menghubungkan aplikasi Anda dengan basis data, melakukan operasi CRUD (Create, Read, Update, Delete) pada data, dan mengelola koneksi dengan basis data.</li>
+    </ul>
+    
+    <h2 class="animate-fade">5.  Sistem Manajemen Basis Data (Database Management Systems - DBMS)</h2>
+    <ul>
+      <li class="animate-fade">Anda perlu memahami cara menginstal, mengkonfigurasi, dan mengelola DBMS seperti MySQL, PostgreSQL, MongoDB, atau yang lainnya, tergantung pada pilihan basis data Anda.</li>
     </ul>
 
-    <h2>6.  Penerapan RESTful API</h2>
+    <h2 class="animate-fade">6.  Penerapan RESTful API</h2>
     <ul>
-        <li>RESTful API adalah cara standar untuk berkomunikasi antara aplikasi back-end dengan aplikasi front-end atau mobile. Anda perlu memahami konsep REST, bagaimana membuat endpoint API, dan bagaimana melakukan operasi CRUD melalui API.</li>
-    </ul>
-   
-    <h2>7.  Keamanan Back-End</h2>
-    <ul>
-        <li>Keamanan adalah aspek kritis dalam back-end development. Anda perlu memahami cara melindungi aplikasi back-end Anda dari serangan seperti SQL injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), dan lainnya.</li>
-    </ul>
-   
-    <h2>8.  Authentikasi dan Otorisasi</h2>
-    <ul>
-        <li>Dalam banyak aplikasi, pengguna perlu diotentikasi (login) dan diberikan izin (otorisasi) untuk mengakses beberapa bagian tertentu. Anda perlu memahami cara mengimplementasikan sistem login, registrasi, dan otorisasi.
-            Sumber daya: Tutorial tentang implementasi sistem login dan otorisasi, buku tentang keamanan web.</li>
-    </ul>
-   
-    <h2>9.  Pengujian Back-End (Testing)</h2>
-    <ul>
-        <li>Pengujian adalah bagian penting dalam mengembangkan aplikasi back-end yang andal. Anda perlu memahami teknik pengujian dan melakukan pengujian unit, integrasi, dan fungsional untuk memastikan aplikasi berjalan dengan baik.</li>
-    </ul>
-   
-    <h2>10.  Deployment dan Hosting</h2>
-    <ul>
-        <li>Setelah selesai mengembangkan aplikasi back-end, Anda perlu tahu cara mendeploy aplikasi tersebut ke server dan memahami konsep hosting. Anda juga harus mempertimbangkan konfigurasi server dan manajemen sumber daya untuk aplikasi Anda.</li>
+      <li class="animate-fade">RESTful API adalah cara standar untuk berkomunikasi antara aplikasi back-end dengan aplikasi front-end atau mobile. Anda perlu memahami konsep REST, bagaimana membuat endpoint API, dan bagaimana melakukan operasi CRUD melalui API.</li>
     </ul>
 
-    <h2>11.  Keamanan Server dan Jaringan</h2>
+    <h2 class="animate-fade">7.  Keamanan Back-End</h2>
     <ul>
-        <li>Selain mengamankan aplikasi, Anda juga perlu memahami bagaimana mengamankan server dan jaringan tempat aplikasi back-end Anda berjalan. Ini mencakup konfigurasi firewall, SSL, dan tindakan keamanan lainnya.</li>
+      <li class="animate-fade>"></li>Keamanan adalah aspek kritis dalam back-end development. Anda perlu memahami cara melindungi aplikasi back-end Anda dari serangan seperti SQL injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), dan lainnya.</li>
     </ul>
 
-    <h2>11.  Penggunaan Framework Back-End</h2>
+    <h2 class="animate-fade">8.  Authentikasi dan Otorisasi</h2>
     <ul>
-        <li>Framework back-end membantu Anda mempercepat proses pengembangan dengan menyediakan struktur dan fitur yang siap pakai. Anda perlu memahami cara menggunakan framework populer seperti Express.js (Node.js), Flask (Python), Ruby on Rails (Ruby), Spring (Java), atau Laravel (PHP).</li>
+      <li class="animate-fade>"></li>Dalam banyak aplikasi, pengguna perlu diotentikasi (login) dan diberikan izin (otorisasi) untuk mengakses beberapa bagian tertentu. Anda perlu memahami cara mengimplementasikan sistem login, registrasi, dan otorisasi.
+      Sumber daya: Tutorial tentang implementasi sistem login dan otorisasi, buku tentang keamanan web.</li>
     </ul>
 
-    <h2>12.  Pemahaman tentang Protokol dan Jaringan</h2>
+    <h2 class="animate-fade">9.  Pengujian Back-End (Testing)</h2>
     <ul>
-        <li>Framework back-end membantu Anda mempercepat proses pengembangan dengan menyediakan struktur dan fitur yang siap pakai. Anda perlu memahami cara menggunakan framework populer seperti Express.js (Node.js), Flask (Python), Ruby on Rails (Ruby), Spring (Java), atau Laravel (PHP).</li>
+      <li class="animate-fade>"></li>Setelah selesai mengembangkan aplikasi back-end, Anda perlu tahu cara mendeploy aplikasi tersebut ke server dan memahami konsep hosting. Anda juga harus mempertimbangkan konfigurasi server dan manajemen sumber daya untuk aplikasi Anda.</li>
     </ul>
 
-    <h2>13. Menerapkan Microservices (Opsional)</h2>
+    <h2 class="animate-fade">10. Penggunaan Framework Back-End</h2>
     <ul>
-        <li>Jika tertarik, Anda dapat mempelajari bagaimana membangun arsitektur aplikasi menggunakan pendekatan microservices.</li>
+      <li class="animate-fade>"></li>Framework back-end membantu Anda mempercepat proses pengembangan dengan menyediakan struktur dan fitur yang siap pakai. Anda perlu memahami cara menggunakan framework populer seperti Express.js (Node.js), Flask (Python), Ruby on Rails (Ruby), Spring (Java), atau Laravel (PHP).</li>
     </ul>
 
-     <h1>Penjelasan Tentang Code diatas</h1>
-    <ul>
-        <li>Tentu! Berikut adalah penjelasan singkat mengenai kode HTML di atas:
-
-
-
-</li>
-    </ul>
+  </div>
+  <script>
+    // Menerapkan animasi fade-in pada elemen dengan class "animate-fade"
+    const animateItems = document.querySelectorAll('.animate-fade');
+    animateItems.forEach(item => item.style.animationDelay = `${item.getAttribute('data-index') * 0.2}s`);
+  </script>
 </body>
 </html>
